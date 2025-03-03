@@ -22,7 +22,7 @@ function getHistory(id){
     pushContainer.appendChild(paragraph);
 }
 function completed(id){
-    alert("DevBoard Successfully")
+    alert("Board Update Successfully")
     const assignTask =getValueById("remaining")
     const checkbox =getValueById("adding")
     
@@ -74,8 +74,7 @@ document.getElementById("addButton").addEventListener('click',function(){
 })
 document.getElementById("ImpBtn").addEventListener('click',function(){
     completed()
-    getHistory("jobText");
-    disable("ImpBtn");
+    alert("congrates!!! You have completed all the current task")
     
 })
 document.getElementById("ClearBtn").addEventListener('click',function(){
