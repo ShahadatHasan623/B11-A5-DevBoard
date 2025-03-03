@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+
+    <!-- tailwind css + daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- googles font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ["Poppins", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-100 font-poppins p-5">
+    <!-- header section  -->
+    <header class="max-w-[1200px] mx-auto bg-[#FFFFFF] rounded-xl p-3 ">
+        <div class="flex justify-between  items-center">
+            <div class="flex items-center gap-3 p-3">
+                <img src="./assets/logo.png" alt="">
+                <h1 class="text-3xl ">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div>
+                <button id="back-btn" class="btn bg-blue-700 text-white">Back To Desk</button>
+            </div>
+        </div>
+    </header>
+     
+    <main class="max-w-[1200px] mx-auto">
+        <section>
+            <h1 class="text-center text-4xl font-bold mt-4">Blog</h1>
+            <!-- card-1  -->
+            <div class="bg-[#FFFFFF] p-4 mt-4 rounded-xl">
+                <h1 class="text-2xl font-semibold mb-2">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <hr class="border-dotted space-y-2">
+                <p class="text-xl">The easiest way to access a single element in the DOM is by its unique ID. You can get an element by ID with the getElementById() method of the document object. In the Console, get the element and assign it to the demoId variable</p>
+
+            </div>
+            <!-- card-2  -->
+            <div class="bg-[#FFFFFF] p-4 mt-4 rounded-xl">
+                <h1 class="text-2xl font-semibold mb-2">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                <hr class="border-dotted space-y-2">
+                <p class="text-xl"> "innerHTML" retrieves the complete HTML content within an element, including tags, while "innerText" only returns the visible text content of an element, ignoring HTML tags and hidden elements, and "textContent" retrieves all text content within an element, including hidden text, but without considering HTML formatting</p>
+
+            </div>
+            <!-- card-3  -->
+            <div class="bg-[#FFFFFF] p-4 mt-4 rounded-xl">
+                <h1 class="text-2xl font-semibold mb-2">Question-3: What is event delegation in the DOM?</h1>
+                <hr class="border-dotted space-y-2">
+                <p class="text-xl">In the DOM, "event delegation" is a technique where you attach a single event listener to a parent element instead of adding listeners to multiple child elements, allowing you to handle events for all child elements by leveraging the "bubbling" phase of event propagation, where an event</p>
+
+            </div>
+            <!-- card-4  -->
+            <div class="bg-[#FFFFFF] p-4 mt-4 rounded-xl">
+                <h1 class="text-2xl font-semibold mb-2">Question-4: What is event bubbling in the DOM?</h1>
+                <hr class="border-dotted space-y-2">
+                <p class="text-xl">Bubbling in the DOM is an event propagation method. It starts with an event triggering on the innermost element and then proceeds to trigger the same event on its parent element and then its parent's parent element and so on.</p>
+
+            </div>
+            <!-- card-5  -->
+            <div class="bg-[#FFFFFF] p-4 mt-4 rounded-xl">
+                <h1 class="text-2xl font-semibold mb-2">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <hr class="border-dotted space-y-2">
+                <p class="text-xl">To add, remove, and modify HTML elements using JavaScript, you can use methods like createElement , appendChild , removeChild , and properties like innerHTML and textContent .</p>
+
+            </div>
+        </section>
+    </main>
+    <script src="./js/backDesk.js"></script>
+</body>
+</html>
